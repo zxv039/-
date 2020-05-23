@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>디미고</title>
+    <meta charset='utf-8'>
+    <style>
+        table {
+            width: 80%;
+            border: 2px solid #222;
+            border-collapse: collapse;
+        }
+        th, td{
+            border: solid #ccc;
+            padding: 5px;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+스마트문화앱콘텐츠제작
+<!-- 테이블 만들 때 필요한 태그 table, tr, td, th-->
+<!-- 표 제목 붙이는 figure, figcaption -->
+<figure>
+    <figcaption>
+        디미고 소개 페이지
+    </figcaption>
+<table border="1">
+    <!--표에 제목 붙이기 <caption>-->
+        <!-- <caption>
+        <strong>디미고 학생 소개 페이지</strong>
+        <p>디미고 학생 소개 연락처</p>
+        </caption> -->
+        <!-- thead, tbody, tfoot 태그를 사용 표의 구조를 정의한다 ->화면 낭독기로 구조 알 수 있다. -->
+        <!-- 여러 열 묶어 스타일 지정하기 colgroup col -->
+        <colgroup>
+        <col>
+        <col span="3" style="background-color: magenta;">
+    
+        </colgroup>
+    <tr>
+        <th>학번</th>
+        <td>3208</td>
+        <th>이름</th>
+        <td>김연서</td>
+    </tr>
+    <!-- 테이플 행 열 합치기 -->
+    <tr>
+        <th>연락처</th>
+        <td colspan="3">010-2748-4153</td>
+    </tr>
+    <tr>
+        <th rowspan="2">취미</th>
+        <td>독서</td>
+        <th>특기</th>
+        <td>컴퓨러</td>
+    </tr>
+    <tr>
+        <td>음악감상</td>
+        <th>특기</th>
+        <td>연주하기</td>
+    </tr>
+</table>
+</figure>
+
+</body>
+
+</html>
